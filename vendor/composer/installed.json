@@ -1,0 +1,477 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim",
+            "reference": "2.2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/codeguy/Slim/archive/2.2.0.zip",
+            "reference": "2.2.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-12-13 02:15:50",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.13.0",
+        "version_normalized": "1.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig.git",
+            "reference": "v1.13.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.13.0",
+            "reference": "v1.13.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2013-05-10 15:12:43",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.13-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "slim/extras",
+        "version": "2.0.3",
+        "version_normalized": "2.0.3.0",
+        "target-dir": "Slim/Extras",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Extras.git",
+            "reference": "2.0.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim-Extras/zipball/2.0.3",
+            "reference": "2.0.3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.0.0"
+        },
+        "time": "2013-01-07 17:56:10",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_Extensions_": "Views/Extension/",
+                "Slim\\Extras": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://www.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Extras package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Extras",
+        "keywords": [
+            "extensions",
+            "middleware",
+            "templating"
+        ]
+    },
+    {
+        "name": "slim/slim-skeleton",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Skeleton",
+            "reference": "1.1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/codeguy/Slim-Skeleton/zipball/1.1.0",
+            "reference": "1.1.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/extras": "2.*",
+            "slim/slim": "2.*",
+            "twig/twig": "1.*"
+        },
+        "time": "2012-09-30 09:56:05",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "A Slim Framework skeleton application for rapid development",
+        "homepage": "http://github.com/codeguy/Slim-Skeleton",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "zetacomponents/database",
+        "version": "1.4.6",
+        "version_normalized": "1.4.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zetacomponents/Database.git",
+            "reference": "1.4.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/zetacomponents/Database/zipball/1.4.6",
+            "reference": "1.4.6",
+            "shasum": ""
+        },
+        "time": "2009-07-27 02:50:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "apache2"
+        ],
+        "authors": [
+            {
+                "name": "Sergey Alexeev"
+            },
+            {
+                "name": "Sebastian Bergmann"
+            },
+            {
+                "name": "Jan Borsodi"
+            },
+            {
+                "name": "Raymond Bosman"
+            },
+            {
+                "name": "Frederik Holljen"
+            },
+            {
+                "name": "Kore Nordmann"
+            },
+            {
+                "name": "Derick Rethans"
+            },
+            {
+                "name": "Vadym Savchuk"
+            },
+            {
+                "name": "Tobias Schlitt"
+            },
+            {
+                "name": "Alexandru Stanoi"
+            },
+            {
+                "name": "Joel Arvidsson"
+            },
+            {
+                "name": "Friedel Hill"
+            },
+            {
+                "name": "Christian Michel"
+            }
+        ],
+        "description": "A lightweight database layer on top of PHP's PDO that allows you to utilize a database without having to take care of differences in SQL dialects.",
+        "homepage": "https://github.com/zetacomponents"
+    },
+    {
+        "name": "league/oauth2-server",
+        "version": "2.1",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-loep/oauth2-server.git",
+            "reference": "2.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-loep/oauth2-server/zipball/2.1",
+            "reference": "2.1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "replace": {
+            "league/oauth2server": "*",
+            "lncd/oauth2": "*"
+        },
+        "require-dev": {
+            "mockery/mockery": ">=0.7.2"
+        },
+        "suggest": {
+            "zetacomponents/database": "Allows use of the build in PDO storage classes"
+        },
+        "time": "2013-05-11 00:59:29",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "League\\OAuth2\\Server": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Bilbie",
+                "email": "hello@alexbilbie.com",
+                "homepage": "http://www.alexbilbie.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "A lightweight and powerful OAuth 2.0 authorization and resource server library with support for all the core specification grants. This library will allow you to secure your API with OAuth and allow your applications users to approve apps that want to access their data from your API.",
+        "homepage": "https://github.com/php-loep/oauth2-server",
+        "keywords": [
+            "Authentication",
+            "api",
+            "authorization",
+            "oauth",
+            "oauth2",
+            "resource",
+            "server"
+        ]
+    },
+    {
+        "name": "zetacomponents/base",
+        "version": "1.8",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zetacomponents/Base.git",
+            "reference": "1.8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/zetacomponents/Base/zipball/1.8",
+            "reference": "1.8",
+            "shasum": ""
+        },
+        "time": "2009-12-21 04:14:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "apache2"
+        ],
+        "authors": [
+            {
+                "name": "Sergey Alexeev"
+            },
+            {
+                "name": "Sebastian Bergmann"
+            },
+            {
+                "name": "Jan Borsodi"
+            },
+            {
+                "name": "Raymond Bosman"
+            },
+            {
+                "name": "Frederik Holljen"
+            },
+            {
+                "name": "Kore Nordmann"
+            },
+            {
+                "name": "Derick Rethans"
+            },
+            {
+                "name": "Vadym Savchuk"
+            },
+            {
+                "name": "Tobias Schlitt"
+            },
+            {
+                "name": "Alexandru Stanoi"
+            }
+        ],
+        "description": "The Base package provides the basic infrastructure that all packages rely on. Therefore every component relies on this package.",
+        "homepage": "https://github.com/zetacomponents"
+    },
+    {
+        "name": "gabordemooij/redbean",
+        "version": "v3.4.4",
+        "version_normalized": "3.4.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gabordemooij/redbean.git",
+            "reference": "v3.4.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/v3.4.4",
+            "reference": "v3.4.4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2013-05-09 11:01:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "RedBean_": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Gabor de Mooij",
+                "email": "gabordemooij@gmail.com",
+                "homepage": "http://www.redbeanphp.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Easy ORM for PHP",
+        "homepage": "http://github.com/gabordemooij/redbean",
+        "keywords": [
+            "Object Relational Mapping",
+            "orm"
+        ]
+    },
+    {
+        "name": "vlucas/valitron",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vlucas/valitron.git",
+            "reference": "v1.0.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vlucas/valitron/zipball/v1.0.4",
+            "reference": "v1.0.4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2013-05-23 19:23:56",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Valitron": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "http://www.vancelucas.com"
+            }
+        ],
+        "description": "Simple, elegant, stand-alone validation library with NO dependencies",
+        "homepage": "http://github.com/vlucas/valitron",
+        "keywords": [
+            "valid",
+            "validation",
+            "validator"
+        ]
+    }
+]
