@@ -1,0 +1,112 @@
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input,table,tr,td  {
+	margin : 0;
+	padding : 0;
+}
+body {
+	font-family :trebuchet ms,Arial, Helvetica, sans-serif;;
+	font-size : 13px;
+	color : #8d9e94;
+	background : #EAEAEA;
+}
+td , p {
+	
+	font-size : 13px;
+	color : #737373;
+}
+a {
+	text-decoration : none;
+	color : #000;
+	outline : none;
+}
+a:hover { text-decoration : none; }
+a img, a { outline : none; }
+a img, input, select, textarea , button { outline : none; } 
+ul, ol { list-style : none; }
+.content {
+	padding:20px !important;
+	width:90%;
+	margin:auto;
+	background:#FFFFFF;
+	border:3px solid #86988c;
+	box-shadow:0 0 7px #fff;
+	border-radius:7px;
+	margin-bottom:20px;
+}
+.endpoint_table th{
+	background:#666666;
+	padding:8px 5px;
+	color:#fff;
+	font-size:14px;
+	border: 1px solid #a7bfb1;
+    border-collapse: collapse;
+	font-weight:bold;
+}
+.endpoint_table th a {color:#fff}
+.endpoint_table th a strong{font-weight:normal;}
+
+.endpoint_table, .endpoint_table td {
+    border: 1px solid #a7bfb1;
+    border-collapse: collapse;
+    color: rgb(0, 0, 0);
+    font: 12px arial;
+    padding: 7px;
+	color:#333333;
+}
+
+.endpoint_table table  {
+	border : 0px !important; }
+.endpoint_table td td {
+	border : 0px !important;
+	border-top : 1px solid #A7BFB1 !important;
+}
+.endpoint_table td tr:first-child td {
+	border : 0px !important;
+}
+.endpoint_table td td.last {
+	border-bottom : 1px solid #A7BFB1 !important;
+}
+label{color:#333333;font-size:14px;font-weight:bold;white-space:nowrap;display:inline-block;padding-top:3px;}
+.row2 td{background:#d8e9df}
+
+.elem_title{
+	border-bottom: 1px solid #29332D;
+	display:inline-block;
+    color: #29332D;
+    font: bold 22px trebuchet ms;
+}
+.title_strip{
+	background: url("title_strip.png") no-repeat scroll 0px bottom transparent;
+}
+.view_link{
+	color:#222222;	
+	font: inherit trebuchet ms;
+}
+.view_link:hover {
+	color:#555555;
+	text-decoration:underline;
+}
+.submit,.submit_button {
+	cursor:pointer;
+	background:#86988c;
+	padding:5px 8px;
+	color:#fff;
+	font:bold 16px trebuchet ms;
+	border:1px solid #666666;
+	*padding:0 0;
+}
+.param{
+	border: 1px solid #CCCCCC;
+	display:inline-block;
+	background:#F8F8F8;
+	padding:5px;
+	width:80%;
+}
+.param pre{
+	color:#3366CC;
+	overflow-x: scroll;
+}
+.head_title{
+	color:#222222;
+	font-size:18px;
+	font-weight:bold;
+}

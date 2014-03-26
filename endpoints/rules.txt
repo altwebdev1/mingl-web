@@ -1,0 +1,35 @@
+Insert - Add, 
+Update - Edit, 
+Delete - Remove, 
+Select - list/view
+
+
+All modules in caps
+
+
+Registration
+Login
+Forgot Password
+View Profile - Others
+View Profile  - Self
+Hashtag list - others
+Hashtag list  - Self
+Post Lists - Others
+Post Lists - Self
+Contacts List -  Other
+Update settings 
+
+
+static Pages
+Intial Hashtag screen
+Hashtag setup screen
+Hashtag Detail
+
+Follow  - Multiple Hashtags
+Add Post
+Post Detail
+Like
+Unlike
+Share
+Comments list
+contact list - self

@@ -1,0 +1,84 @@
+<?php
+ob_start();
+require_once('includes/CommonIncludes.php');
+require_once('controllers/AdminController.php');
+$adminLoginObj   =   new AdminController();
+if(isset($_SESSION['intermingl_admin_user_name'])){
+	header('location:UserList?cs=1');
+	die();
+}
+$error = '';
+if(isset($_POST['admin_login_submit']) && $_POST['admin_login_submit'] == 'Submit'){
+	$_POST          =   unEscapeSpecialCharacters($_POST);
+   	$_POST          =   escapeSpecialCharacters($_POST);
+    $md5Pass        =   $_POST['password'];		
+    $condition  	=   " UserName = '{$_POST['user_name']}' AND Password = '{$md5Pass}'";
+    $result 		=   $adminLoginObj->checkAdminLogin($condition);
+	if($result)
+    {
+		$_SESSION['intermingl_admin_user_id'] 		= $result[0]->id;
+		$_SESSION['intermingl_admin_user_name'] 	    = $result[0]->UserName;
+		$_SESSION['intermingl_admin_user_email'] 	= $result[0]->EmailAddress;
+		$fields     = " LastLoginDate = '".date('Y-m-d H:i:s')."'";
+		$condition  = " Id = ".$result[0]->id;
+		$result     =   $adminLoginObj->updateAdminDetails($fields,$condition);
+		header('location:UserList?cs=1');
+		die();
+	}
+	else{
+		$error = "Invalid Username or Password";
+	}
+}
+commonHead();
+?>
+<body onload="fieldfocus('user_name');">
+	<div id="login_form">
+		<table align="center" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" >
+			<tr>
+				<td valign="middle" align="center" height="100%">
+					<form action="" name="admin_login_form" id="admin_login_form"  method="post">
+						<div class="login">
+						<table align="center" cellpadding="0" cellspacing="0" border="0" width="450">
+							<tr><td colspan="3" height="5"></td></tr>
+							<tr>
+								<td colspan="3" align="center" class="login_logo"></td>
+							</tr>
+							<tr><td height="10"></td></tr>
+							<tr><td align="center" colspan="3"><h2 style="font-size:20px;">Administrator&nbsp;:&nbsp;Login</h2></td></tr>
+							<tr><td colspan="3" align="center" height="20" valign="top">
+							<?php if($error !='') { ?><div class="error_msg"><span><?php echo $error;?></span></div><?php  } ?>
+							</td></tr>
+							<tr><td colspan="3" height="20"></td></tr>
+							<tr>
+								<td width="25%" valign="top" align="left" style="padding-left:50px;"><label>Username</label></td>
+								<td width="5%" align="center" valign="top">:</td>
+								<td height="50" valign="top" align="left">
+									<input type="text" class="input" name="user_name" id="user_name" value="" />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" style="padding-left:50px;"><label>Password</label></td>
+								<td align="center" valign="top">:</td>
+								<td height="50" valign="top" align="left">
+									<input type="password" class="input" name="password" id="password" value="" >
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td align="left">
+									<input type="submit" value="Submit" class="submit" title="Submit" alt="Submit" name="admin_login_submit" id="admin_login_submit"/>
+									<a href="ForgotPassword" title="Forgot your password" alt="Forgot your password" class="forget_pw">Forgot your password?</a>
+								</td>
+							</tr>
+							<tr><td colspan="3" height="5"></td></tr>		
+						</table>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+<?php commonFooter(); ?>
+</html>
